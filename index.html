@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negina Majid - Web & Graphic Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold font-display text-gradient">
+                    Negina
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-purple-600 active">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-purple-600">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-purple-600">Services</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-purple-600">Portfolio</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-purple-600">About</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600">Services</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-purple-600">Portfolio</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50">
+        <!-- Animated Background -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-72 h-72 gradient-primary rounded-full blob opacity-10"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 gradient-secondary rounded-full blob opacity-10" style="animation-delay: -2s;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 gradient-accent rounded-full blob opacity-5" style="animation-delay: -4s;"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="slide-in-left">
+                <div class="mb-6">
+                    <span class="text-lg text-purple-600 font-medium">Hi, I'm Negina Majid 👋</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold font-display mb-6">
+                    Web developer & Graphic <span class="text-gradient">Designer</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    <span id="typing-text" class="typing-animation">Turning ideas into clean, creative, and powerful designs.</span>
+                </p>
+                <p class="text-lg text-gray-600 mb-8">
+                    A web & graphic designer who creates modern, professional, and user-friendly designs. I help brands and creators grow through clean visuals and creative design solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#portfolio" class="gradient-primary text-white px-8 py-4 rounded-full font-semibold hover-scale text-center">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition duration-300 text-center">
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+            
+            <div class="slide-in-right">
+                <div class="relative">
+                    <!-- Profile Image Placeholder -->
+                    <div class="w-80 h-80 mx-auto gradient-primary rounded-full flex items-center justify-center relative overflow-hidden">
+                        <div class="w-72 h-72 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-6xl text-purple-600"> <img src="/images/c7b4622023cddd0f587419d417632f59 copy.png" alt=""></i>
+                        </div>
+                        <!-- Floating Design Elements -->
+                        <div class="absolute top-10 right-10 floating">
+                            <div class="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-palette text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-10 left-10 floating" style="animation-delay: -2s;">
+                            <div class="w-10 h-10 gradient-accent rounded-full flex items-center justify-center">
+                                <i class="fas fa-pen-nib text-white text-sm"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 left-5 floating" style="animation-delay: -4s;">
+                            <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                                <i class="fas fa-star text-white text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold font-display mb-4">About <span class="text-gradient">Me</span></h2>
+                <div class="w-20 h-1 gradient-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="slide-in-left">
+                    <div class="relative">
+                        <div class="w-full h-96 gradient-primary rounded-2xl flex items-center justify-center">
+                            <div class="text-center text-white">
+                                 <img src="images/a105781147223845579f82855d89c7b6.jpg" alt="">
+                                <!-- <p class="text-xl font-semibold">Creative Designer</p>  -->
+                            </div>
+                        </div>
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-6 -right-6 w-24 h-24 gradient-secondary rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 gradient-accent rounded-full opacity-20"></div>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <h3 class="text-3xl font-bold font-display mb-6">Welcome! I'm Negina Majid</h3>
+                    <h4 class="text-xl font-semibold text-purple-600 mb-6">Web developer & Graphic Designer</h4>
+                    
+                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>
+                            I specialize in creating clean, modern, and creative designs that help individuals and businesses stand out online. From logos and brand identity to web design layouts and social media visuals, I bring ideas to life with a focus on simplicity, clarity, and creativity.
+                        </p>
+                        <p>
+                            With strong skills in Photoshop, digital editing, and visual storytelling, I design graphics that not only look beautiful but also communicate effectively. My goal is always the same: to create visuals that connect with your audience and leave a lasting impression.
+                        </p>
+                        <p>
+                            I believe design is more than just visuals — it's about solving problems, building trust, and helping brands grow. That's why every project I take on is crafted with care, attention to detail, and a touch of originality.
+                        </p>
+                        <p class="font-semibold text-gray-800">
+                            If you're looking for a designer who's passionate, reliable, and ready to bring your vision to life, you've come to the right place.
+                        </p>
+                        <p class="text-lg font-semibold text-gradient">
+                            ✨ Let's build something amazing together.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">50+</div>
+                            <p class="text-gray-600">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">3+</div>
+                            <p class="text-gray-600">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">40+</div>
+                            <p class="text-gray-600">Happy Clients</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">100%</div>
+                            <p class="text-gray-600">Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold font-display mb-4">My <span class="text-gradient">Skills</span></h2>
+                <div class="w-20 h-1 gradient-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-semibold mb-8">Design Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Adobe Photoshop</span>
+                                <span class="text-purple-600 font-medium">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-primary h-3 rounded-full" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Adobe Illustrator</span>
+                                <span class="text-purple-600 font-medium">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-primary h-3 rounded-full" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Canva</span>
+                                <span class="text-purple-600 font-medium">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-primary h-3 rounded-full" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Brand Identity</span>
+                                <span class="text-purple-600 font-medium">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-primary h-3 rounded-full" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <h3 class="text-2xl font-semibold mb-8">Web Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HTML/CSS</span>
+                                <span class="text-purple-600 font-medium">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-secondary h-3 rounded-full" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Django/React</span>
+                                <span class="text-purple-600 font-medium">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-secondary h-3 rounded-full" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">GitHub/GitLab</span>
+                                <span class="text-purple-600 font-medium">87%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-secondary h-3 rounded-full" data-width="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">MySQL</span>
+                                <span class="text-purple-600 font-medium">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar gradient-secondary h-3 rounded-full" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold font-display mb-4">My <span class="text-gradient">Services</span></h2>
+                <div class="w-20 h-1 gradient-primary mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    I offer comprehensive design services to help your brand stand out and connect with your audience.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Logo & Brand Identity</h3>
+                    <p class="text-gray-600 mb-6">
+                        Creating memorable logos and comprehensive brand identities that reflect your business values and connect with your target audience.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Logo Design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Brand Guidelines</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Business Cards</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover fade-in" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 gradient-secondary rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
+                    <p class="text-gray-600 mb-6">
+                        Modern, responsive web design layouts that provide excellent user experience across all devices and platforms.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Responsive Design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>web Design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Landing Pages</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover fade-in" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 gradient-accent rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-images text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Social Media Graphics</h3>
+                    <p class="text-gray-600 mb-6">
+                        Eye-catching social media visuals that help your brand stand out and engage with your audience effectively.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Instagram Posts</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Facebook Covers</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Story Templates</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover fade-in" style="animation-delay: 0.6s;">
+                    <div class="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Print Design</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professional print materials including brochures, flyers, and marketing collateral that make a lasting impression.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Brochures</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Flyers</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Posters</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover fade-in" style="animation-delay: 0.8s;">
+                    <div class="w-16 h-16 gradient-secondary rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-magic text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Photo Editing</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professional photo editing and retouching services using advanced Photoshop techniques for stunning results.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Photo Retouching</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Color Correction</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Background Removal</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover fade-in" style="animation-delay: 1s;">
+                    <div class="w-16 h-16 gradient-accent rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Marketing Materials</h3>
+                    <p class="text-gray-600 mb-6">
+                        Creative marketing materials that help promote your business and communicate your message effectively.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Banners</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Advertisements</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Presentations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold font-display mb-4">My <span class="text-gradient">Portfolio</span></h2>
+                <div class="w-20 h-1 gradient-primary mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Here are some of my recent projects that showcase my design skills and creativity.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg hover-scale fade-in">
+                    <div class="h-64 gradient-primary flex items-center justify-center">
+                        <!-- <i class="fas fa-paint-brush text-4xl text-white"> -->
+                            <img src="images/product project.jpg" alt=""></i>
+                    </div>
+                    <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Brand Identity Design</h3>
+                            <p class="mb-4">Complete branding package for startup</p>
+                            <button class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                               View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg hover-scale fade-in" style="animation-delay: 0.2s;">
+                    <div class="h-64 gradient-secondary flex items-center justify-center">
+                           <i class="fas fa-laptop text-4xl text-white">
+                            <img src="" alt=""></i>
+                    </div>
+                    <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Website Design</h3>
+                            <p class="mb-4">Modern e-commerce website layout</p>
+                            <button class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg hover-scale fade-in" style="animation-delay: 0.4s;">
+                    <div class="h-64 gradient-accent flex items-center justify-center">
+                        <!-- <i class="fas fa-mobile-alt text-4xl text-white">  -->
+                            <img src="images/MEGA.jpg" alt="">
+                        <!-- </i> -->
+                    </div>
+                    <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Banner Design</h3>
+                            <p class="mb-4">Impactful banner visuals.</p>
+                            <button class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg hover-scale fade-in" style="animation-delay: 0.6s;">
+                    <div class="h-64 gradient-primary flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-white"><img src="images/sale.jpg" alt=""></i>
+                    </div>
+                    <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Social Media Graphics</h3>
+                            <p class="mb-4">Instagram post templates</p>
+                            <button class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                               View Project
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg hover-scale fade-in" style="animation-delay: 0.8s;">
+                    <div class="h-64 gradient-secondary flex items-center justify-center">
+                        <!-- <i class="fas fa-file-alt text-4xl text-white">
+                            </i> -->
+                     <img src="images/project brochure.jpg" alt="">
+                    </div>
+                    <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Print Design</h3>
+                            <p class="mb-4">Business brochure design</p>
+                            <button class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                               View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg hover-scale fade-in" style="animation-delay: 1s;">
+                    <div class="h-64 gradient-accent flex items-center justify-center">
+                        <i class="fas fa-magic text-4xl text-white"><img src="images/BMW copy.jpg" alt=""></i>
+                    </div>
+                    <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Photo Editing</h3>
+                            <p class="mb-4">Professional photo retouching</p>
+                            <button class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                            View Project 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold font-display mb-4">Let's <span class="text-gradient">Connect</span></h2>
+                <div class="w-20 h-1 gradient-primary mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600">Ready to bring your vision to life? Let's discuss your project!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        I'm always excited to work on new projects and help bring creative ideas to life. Whether you need a complete brand identity, a stunning website, or eye-catching graphics, I'm here to help.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-600">neginamajid@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p class="text-gray-600">+93-744-5160-43</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 gradient-accent rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-gray-600">Available Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <p class="font-semibold mb-4">Follow Me</p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/profile.php?id=61580194127795" class="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center text-white hover-scale">
+                                <img src="/images/fa.png"alt="">
+                            </a>
+                            <a href="https://www.instagram.com/pixelandcode0/" class="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center text-white hover-scale">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/neginamajid" class="w-12 h-12 gradient-accent rounded-lg flex items-center justify-center text-white hover-scale">
+                                 <img src="/images/h.png" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/in/negina-majid-8b904739a" class="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center text-white hover-scale">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <input type="text" name="name" placeholder="Your Name" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition duration-300">
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Your Email" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition duration-300">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" name="subject" placeholder="Subject" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition duration-300">
+                        </div>
+                        <div>
+                            <select name="service" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition duration-300">
+                                <option value="">Select a Service</option>
+                                <option value="logo-branding">Logo & Brand Identity</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="social-media">Social Media Graphics</option>
+                                <option value="print-design">Print Design</option>
+                                <option value="photo-editing">Photo Editing</option>
+                                <option value="marketing">Marketing Materials</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="5" placeholder="Tell me about your project..." required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition duration-300 resize-none"></textarea>
+                        </div>
+                        <button type="submit" 
+                            class="w-full gradient-primary text-white py-3 rounded-lg font-semibold hover-scale">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 text-center hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-3xl font-bold font-display text-gradient mb-4">Negina</div>
+                <p class="text-gray-400 mb-6">Web developer & Graphic Designer</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://www.instagram.com/pixelandcode0/" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61580194127795" style="width: 40px; height: 20px;" class="text-gray-400 hover:text-white transition duration-300">
+                        <img src="/images/fa.png"alt="">
+                    </a>
+                    <a href="https://github.com/neginamajid" class="text-gray-400 hover:text-white transition duration-300">
+                        <img src="/images/h.png" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/negina-majid-8b904739a" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-400">&copy; 2025 Negina Majid. All rights reserved. Designed with ❤️</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+   
+</body>
+</html>
